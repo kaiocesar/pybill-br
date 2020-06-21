@@ -1,10 +1,13 @@
+from impostos import calcula_icms, calcula_iss
+
+
 class Calculador_de_impostos(object):
 
     def realiza_calculo(self, orcamento, imposto):
         if imposto == 'ISS':
-            return orcamento.valor * 0.1
+            return calcula_iss(orcamento)
         elif imposto == 'ICMS':
-            return orcamento.valor * 0.06
+            return calcula_icms(orcamento)
 
 
 if __name__ == '__main__':
