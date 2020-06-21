@@ -1,6 +1,8 @@
-def calcula_iss(orcamento):
-    return orcamento.valor * 0.1
+class ISS(object):
+    def calcula(self, orcamento):
+        return orcamento.valor * 0.1
 
 
-def calcula_icms(orcamento):
-    return orcamento.valor * 0.06
+class ICMS(object):
+    def calcula(self, orcamento):
+        return orcamento.valor * 0.06
